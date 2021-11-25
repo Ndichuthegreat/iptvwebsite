@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'iptvweb',
 ]
 
+TELEGRAM = {
+    'bot_token': '2110937747:AAGZzaTV62LMwN-1L4HJ5oNEvw6gZxKvw38',
+    'channel_name': 'iptvintelchannel',
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
