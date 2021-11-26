@@ -1,5 +1,5 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "editor.cursorStyle": "block"
 }

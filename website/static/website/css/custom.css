@@ -1,1 +1,45 @@
 /* Add here all your CSS customizations */
+
+.telegram-popup {
+    height: 90px;
+    min-width: 5%;
+    width: 100px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    /*round corners*/
+    border-radius: 10px;
+    /*cool option borders.*/
+    /*animate. hide on load*/
+    display: none;
+}
+
+
+/*text stuff*/
+
+.telegram-popup p {
+    color: #000000;
+    padding: 4px;
+}
+
+.telegram-button {
+    background-color: #1682fb;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.telegram-button:hover {
+    background-color: #1080f5;
+}
+
+.telegram-button p {
+    color: #ffffff;
+    font-size: 15px;
+    /*padding makes the link like a bubble*/
+    padding: 10px;
+}
+
+.telegram-button-link:link {
+    text-decoration: none;
+}
