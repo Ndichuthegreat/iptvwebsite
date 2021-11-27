@@ -10,9 +10,9 @@
 
     <title>About page</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="iptv intel" />
+    <meta name="description" content="iptv intel - The best choice for your Entertainment">
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}" type="image/x-icon" />
@@ -64,7 +64,7 @@
                         <div class="header-column">
                             <div class="header-row">
                                 <div class="header-logo">
-                                    <a href="#" class="goto-top"><img alt="Porto" width="200" height="48" data-sticky-width="82" data-sticky-height="40" data-sticky-top="0" src="{% static 'website/img/IPTV intel.png' %}"></a>
+                                    <a href="#" class="goto-top"><img alt="iptv intel" width="200" height="48" data-sticky-width="82" data-sticky-height="40" data-sticky-top="0" src="{% static 'website/img/IPTV intel.png' %}"></a>
                                 </div>
                             </div>
                         </div>
@@ -85,15 +85,13 @@
 															About
 													</a>
                                                 </li>
-                                                <li class="dropdown dropdown-mega">
-                                                    <a class="dropdown-item dropdown-toggle" href="{% url 'contact' %}">
-															Contact us
-													</a>
+                                                <li>
+                                                    <a class="dropdown-item" data-hash data-hash-offset="68" href="{% url 'contact' %}">Contact Us</a>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
-                                    <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3" href="{% url 'subscribe' %}" target="_blank">Get IPTV NOW!</a>
+                                    <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3" href="{% url 'subscribe' %}" target="_blank">Subscribe NOW!</a>
                                     <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fa fa-bars"></i></button>
                                 </div>
                             </div>
@@ -104,7 +102,7 @@
         </header>
 
         <div role="main" class="main">
-            <section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-image: url(img/landing/header_bg.jpg); background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;">
+            <section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-image: url({% static 'website/img/landing/header_bg.jpg' %}); background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;">
                 <div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
                 <div class="container pt-5 mt-5">
                     <div class="row align-items-center pt-3">
@@ -112,32 +110,32 @@
                             <h5 class="text-primary font-weight-bold mb-1">IPTV intel</h5>
                             <h1 class="font-weight-bold text-12 line-height-2 mb-3">The Best IPTV<span><span class="d-inline-block text-primary highlighted-word highlighted-word-rotate highlighted-word-animation-1 highlighted-word-animation-1-no-animate alternative-font-3 font-weight-bold text-1 ml-2">ever</span></span>
                             </h1>
-                            <p class="custom-font-size-1">Porto is simply the best choice for your Entertainment. Stream your Favorite Shows and Watch Live Sports in 4K 100% no buffer. <a href="#intro" data-hash data-hash-offset="120" class="text-color-light font-weight-semibold text-1 d-block">VIEW MORE <i class="fa fa-long-arrow-alt-right ml-1"></i></a></p>
+                            <p class="custom-font-size-1">iptv intel is simply the best choice for your Entertainment. Stream your Favorite Shows and Watch Live Sports in 4K 100% no buffer. <a href="#intro" data-hash data-hash-offset="120" class="text-color-light font-weight-semibold text-1 d-block">VIEW MORE <i class="fa fa-long-arrow-alt-right ml-1"></i></a></p>
                             <a class="video-open lightbox d-block text-color-light" href="#popup-content-1" data-trigger-play-video="#popupPresentation">
                                 <div class="video-open-icon"></div>See How It Works</a>
 
                             <div id="popup-content-1" class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out">
                                 <div class="embed-responsive embed-responsive-4by3">
-                                    <img id="popupPresentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg">
-                                    <source src="{% static 'website/img/IPTV intel.png' %}" type="image">
-                                    <source src="{% static 'website/img/IPTV intel.png' %}" type="image">
-                                    </img>
+                                    <video id="popupPresentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg">
+                                        <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                        <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                  </video>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 offset-lg-1 mb-5">
                             <div class="position-relative border-width-10 border-color-light clearfix border border-radius" data-remove-min-height style="min-height: 446px;">
-                                <img id="popupPresentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg">
-                                <source src="{% static 'website/img/IPTV intel.png' %}" type="image">
-                                <source src="{% static 'website/img/IPTV intel.png' %}" type="image">
-                                </img>
+                                <video id="presentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg" data-auto-play="true">
+                                    <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                    <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                              </video>
                                 <a href="#" class="position-absolute top-50pct left-50pct transform3dxy-n50 bg-light rounded-circle d-flex align-items-center justify-content-center text-decoration-none bg-color-hover-primary text-color-hover-light play-button-lg pulseAnim pulseAnimAnimated"
                                     data-trigger-play-video="#presentation" data-trigger-play-video-remove="yes">
                                     <i class="fas fa-play text-5"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 z-index-2">
+                        <div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 z-index-2" style="background-color:#0088CC">
                             <div>
                                 <div class="star-rating-wrap d-flex align-items-center justify-content-center position-relative text-dark text-5 py-2 mb-2">
                                     <i class="fas fa-star"></i><i class="fas fa-star ml-1"></i><i class="fas fa-star ml-1"></i><i class="fas fa-star ml-1"></i><i class="fas fa-star ml-1"></i>
@@ -210,15 +208,15 @@
                         </div>
                         <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
                             <i class="icon-bg icon-1"></i>
-                            <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">Super High<br>Quality</h4>
-                        </div>
-                        <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
-                            <i class="icon-bg icon-2"></i>
                             <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">100% no<br>buffer</h4>
                         </div>
                         <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                            <i class="icon-bg icon-2"></i>
+                            <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">Affordable<br> for all</h4>
+                        </div>
+                        <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
                             <i class="icon-bg icon-3"></i>
-                            <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">600+ <br>channels to watch world wide</h4>
+                            <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">600+ <br>channels for all worldwide</h4>
                         </div>
                         <div class="col-sm-12">
                             <hr class="my-5">
@@ -241,7 +239,8 @@
                     <div class="row align-items-center pt-md-5 mt-5">
                         <div class="col-lg-6 offset-lg-1 mb-5">
                             <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                                <img src="img/lazy.png" data-src="img/landing/porto_dots.png" width="154" height="146" class="lazyload position-absolute top-auto" alt="6 reasons" data-plugin-float-element data-plugin-options="{'startPos': 'none', 'speed': 3, 'transition': true}" style="bottom: 184px; left: 70px;">
+                                <img src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" width="154" height="146" class="lazyload position-absolute top-auto" alt="6 reasons" data-plugin-float-element data-plugin-options="{'startPos': 'none', 'speed': 3, 'transition': true}"
+                                    style="bottom: 184px; left: 70px;">
                             </div>
                             <div class="text-reasons">
                                 <label class="text-color-light appear-animation z-index-1" data-appear-animation="blurIn" data-appear-animation-delay="250" data-appear-animation-duration="750">6</label>
@@ -1501,7 +1500,12 @@
                             <p class="custom-text-color-1 color-inherit pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750">We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"></i>
-                                <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1300" data-appear-animation-duration="750">antifreez technolology, no buffers, 4k, HD, HDR, HDR+ </p>
+                                <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1300" data-appear-animation-duration="750">antifreez technolology</p>
+                                <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"></i>
+                                <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1300" data-appear-animation-duration="750">no buffers</p>
+                                <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"></i>
+                                <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1300" data-appear-animation-duration="750"> 4k, HD, HDR, HDR+ </p>
+
                             </div>
                         </div>
                     </div>
@@ -1510,18 +1514,18 @@
 
             <section class="section section-funnel border-0 bg-light lazyload m-0" style="background-size: 100%; background-repeat: no-repeat; background-position: top;" data-bg-src="img/landing/half_circle.png">
                 <div class="container text-center pb-5 mt-3 mb-5">
-                    <h2 class="font-weight-bold text-9 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Layouts</h2>
-                    <h5 class="text-primary font-weight-semibold positive-ls-2 text-4 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">GIANT LIBRARY OF VARIATIONS</h5>
-                    <p class="text-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="550">Giant variety of layouts to create your site with unlimited possibilities.</p>
-                    <div class="row flex-column flex-lg-row justify-content-center align-items-center my-5">
+                    <h2 class="font-weight-bold text-9 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">IPTV intel</h2>
+                    <h5 class="text-primary font-weight-semibold positive-ls-2 text-4 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">The best choice for your Entertainment</h5>
+                    <p class="text-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="550">We are IPTVIntel, the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                    <!-- <div class="row flex-column flex-lg-row justify-content-center align-items-center my-5">
                         <div class="col-8 col-md-5 col-lg-3 image-box mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750">
                             <div class="image mb-3">
                                 <img alt="Layouts" width="195" height="161" src="img/lazy.png" data-src="img/landing/porto_layouts1.png" class="position-relative z-index-3 lazyload mr-auto" style="width: 67.47%; left: -51px;">
                                 <img alt="Layouts" width="174" height="161" src="img/lazy.png" data-src="img/landing/porto_layouts3.png" class="position-relative z-index-1 lazyload ml-auto" style="width: 60.2%; margin-top: -32%; right: -50px;">
                                 <img alt="Layouts" width="174" height="161" src="img/lazy.png" data-src="img/landing/porto_layouts3.png" class="position-relative z-index-2 lazyload mx-auto" style="width: 60.2%; margin-top: -13%;">
                             </div>
-                            <h4 class="text-dark font-weight-bold pt-2 mb-1">Layouts</h4>
-                            <p class="fs-md text-3 px-lg-4">Max Width 1200px, 1170px, 1024px,<br> full width, etc...</p>
+                            <h4 class="text-dark font-weight-bold pt-2 mb-1">IPTV intel</h4>
+                            <p class="fs-md text-3 px-lg-4"><br></p>
                         </div>
                         <div class="col-8 col-md-5 col-lg-3 image-box mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750">
                             <div class="image mb-3">
@@ -1542,7 +1546,7 @@
                             <h4 class="text-dark font-weight-bold pt-2 mb-1">Sliders</h4>
                             <p class="fs-md text-3 px-lg-4">You can set several different types of sliders, boxed, full, grid, etc..</p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="section-funnel-layer-bottom">
                     <div class="section-funnel-layer bg-color-light-scale-1"></div>
@@ -1677,8 +1681,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-center mb-5"><a class="btn btn-dark btn-modern btn-rounded btn-px-5 btn-py-3 text-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="250" data-appear-animation-duration="600" href="https://themeforest.net/item/porto-responsive-html5-template/4106987"
-                            target="_blank">Get IPTV NOW</a></p>
+                    <p class="text-center mb-5"><a class="btn btn-dark btn-modern btn-rounded btn-px-5 btn-py-3 text-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="250" data-appear-animation-duration="600" href="#" target="_blank">Get IPTV NOW</a></p>
                 </div>
 
             </section>
@@ -1688,28 +1691,28 @@
                     <div class="row align-items-center mb-5">
                         <div class="col-lg-6 pr-xl-5 mb-5 mb-lg-0">
                             <h2 class="font-weight-bold text-9 mb-1">Professional Support</h2>
-                            <h5 class="font-weight-semibold positive-ls-2 text-4 text-primary mb-3">ONLINE DOCUMENTATION, VIDEOS AND FORUM</h5>
-                            <p class="ls-0 text-default fw-400 mb-5">Any problem while using Porto? We're here to help you.</p>
+                            <h5 class="font-weight-semibold positive-ls-2 text-4 text-primary mb-3">Issue 1</h5>
+                            <p class="ls-0 text-default fw-400 mb-5">Any problem while using IPTV intel? We're here to help you.</p>
                             <div class="d-flex align-items-center border border-top-0 border-right-0 border-left-0 pb-4 mb-4">
                                 <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
-                                <p class="mb-0"><b class="text-color-dark">Online Documentation -</b> Contains all descriptions related to Porto usage and features.</p>
+                                <p class="mb-0"><b class="text-color-dark">Professional Support-</b> Any problem while using IPTV intel? We're here to help you.</p>
                             </div>
                             <div class="d-flex align-items-center border border-top-0 border-right-0 border-left-0 pb-4 mb-4">
                                 <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
-                                <p class="mb-0 mb-0 opacity-5"><b class="text-color-dark">Video Documentation (coming soon) -</b> Need visual instructions? Check our video tutorials.</p>
+                                <p class="mb-0 mb-0 opacity-5"><b class="text-color-dark">Professional Support -</b> Any problem while using IPTV intel? We're here to help you.</p>
                             </div>
                             <div class="d-flex align-items-center pb-4 mb-4">
                                 <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
-                                <p class="mb-0"><b class="text-color-dark">Support Center -</b> Contact us if you get any issue while using Porto, reply within 16 hrs.</p>
+                                <p class="mb-0"><b class="text-color-dark">Professional Support -</b> Any problem while using IPTV intel? We're here to help you.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 offset-lg-2">
                             <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
                                 <img class="img-fluid lazyload" src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="" style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-                            <img alt="Porto Support" src="img/lazy.png" data-src="img/landing/support_login.jpg" class="img-fluid border border-width-10 border-color-light rounded box-shadow-3 lazyload ml-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                            <img alt="iptv intel Support" src="img/lazy.png" data-src="img/landing/support_login.jpg" class="img-fluid border border-width-10 border-color-light rounded box-shadow-3 lazyload ml-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200"
                                 style="width: 590px; max-width: none;">
-                            <img alt="Porto Documentation" src="img/lazy.png" data-src="img/landing/porto_docs.jpg" class="img-fluid lazyload rounded box-shadow-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="700" style="left: -100px; bottom: 50px;">
+                            <img alt="iptv intel Documentation" src="img/lazy.png" data-src="img/landing/porto_docs.jpg" class="img-fluid lazyload rounded box-shadow-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="700" style="left: -100px; bottom: 50px;">
 
                         </div>
                     </div>
@@ -1722,7 +1725,7 @@
                 <div class="container text-center my-5 py-5">
                     <h2 class="font-weight-bold line-height-3 text-12 mt-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-appear-animation-duration="750">Get the Next Gen IPTV</h2>
                     <h4 class="font-weight-bold text-9 mb-4 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750">Subscribe now. Only <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-no-rotate highlighted-word-animation-1 highlighted-word-animation-1-light alternative-font-4 font-weight-extra-bold text-4 light appear-animation"
-                            data-appear-animation="blurIn" data-appear-animation-delay="800" data-appear-animation-duration="750">$16!</span></h4>
+                            data-appear-animation="blurIn" data-appear-animation-delay="800" data-appear-animation-duration="750">Ksh 2,500</span></h4>
                     <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" data-appear-animation-duration="750">
                         <h4 class="font-weight-light text-4 col-lg-6 px-0 offset-lg-3 fw-400 mb-5 opacity-8">We are IPTVIntel, the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</h4>
                     </div>
@@ -1746,7 +1749,7 @@
                         <a href="#" class="text-decoration-none" target="_blank">
                             <div class="icon-box">
                                 <i class="icon-bg icon-menu-1"></i>
-                                <h4 class="text-4 mb-0">Customer Showcase<small class="d-block p-relative bottom-4 opacity-6 ls-0">(SAMPLE SITES)</small></h4>
+                                <h4 class="text-4 mb-0">Channel Showcase<small class="d-block p-relative bottom-4 opacity-6 ls-0">Top premium channels</small></h4>
                             </div>
                         </a>
                     </div>
@@ -1782,13 +1785,14 @@
                     <div class="row ">
                         <div class="col ">
                             <ul class="list list-unstyled list-inline d-flex align-items-center justify-content-center flex-column flex-lg-row mb-0 ">
-                                <li class="list-inline-item custom-text-color-1 color-inherit mb-lg-0 text-2 pr-2 ">Porto Versions:</li>
-                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">ADMIN HTML</a></li>
-                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">SHOP HTML</a></li>
-                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">WORDPRESS</a></li>
+                                <li class="list-inline-item custom-text-color-1 color-inherit mb-lg-0 text-2 pr-2 ">IPTV available packages</li>
+                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank "> Gen+ IPTV </a></li>
+                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">Premium IPTV</a></li>
+                                <!-- <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">WORDPRESS</a></li>
                                 <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">MAGENTO</a></li>
                                 <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">SHOPIFY</a></li>
                                 <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">DRUPAL</a></li>
+                            -->
                             </ul>
                         </div>
                     </div>
@@ -1798,10 +1802,10 @@
         <footer id="footer " class="bg-color-dark-scale-2 border border-right-0 border-left-0 border-bottom-0 border-color-light-3 mt-0 ">
             <div class="container text-center my-3 py-5 ">
                 <a href="# " class="goto-top ">
-                    <img src="{% static 'website/img/IPTV intel.png' %} " data-src="{% static 'website/img/IPTV intel.png' %} " width="102 " height="45 " class="appear-animation lazyload mb-4 " alt=" " data-appear-animation="fadeIn
+                    <img src="{% static 'website/img/IPTV intel.png' %} " data-src="{% static 'website/img/IPTV intel.png' %} " width="202 " height="45 " class="appear-animation lazyload mb-4 " alt=" " data-appear-animation="fadeIn
                             " data-appear-animation-delay="300 ">
                 </a>
-                <p class="text-4 mb-4 ">We give you the stability and reliability of the service. Get the next GEN+ IPTV.<a href="# " class="text-color-light " target="_blank ">Okler.</a></p>
+                <p class="text-4 mb-4 ">We give you the stability and reliability of the service. Get the next GEN+ IPTV.<a href="# " class="text-color-light " target="_blank ">IPTV.</a></p>
                 <ul class="social-icons social-icons-big social-icons-dark-2 ">
                     <li class="social-icons-facebook "><a href="http://www.facebook.com/ " target="_blank " title="Facebook "><i class="fab fa-facebook-f "></i></a></li>
                     <li class="social-icons-twitter "><a href="http://www.twitter.com/ " target="_blank " title="Twitter "><i class="fab fa-twitter "></i></a></li>
@@ -1810,7 +1814,7 @@
             </div>
             <div class="copyright bg-dark py-4 ">
                 <div class="container text-center py-2 ">
-                    <p class="mb-0 text-2 ">Copyright 2013 - 2021 - Porto - All Rights Reserved</p>
+                    <p class="mb-0 text-2 ">Copyright 2021 - IPTV intel - All Rights Reserved</p>
                 </div>
             </div>
             <div class="telegram-popup " align="center ">

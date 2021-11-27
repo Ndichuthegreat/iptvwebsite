@@ -1,163 +1,163 @@
 /*
 Name: 			Architecture 2
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* Slider Background
-	*/
-	var $slider = $('#slider'),
-		direction = '';
+    /*
+     * Slider Background
+     */
+    var $slider = $('#slider'),
+        direction = '';
 
-	$slider.on('click', '.owl-next', function(){
-		direction = 'next';
-	});
+    $slider.on('click', '.owl-next', function() {
+        direction = 'next';
+    });
 
-	$slider.on('click', '.owl-prev', function(){
-		direction = 'prev';
-	});
+    $slider.on('click', '.owl-prev', function() {
+        direction = 'prev';
+    });
 
-	$slider.on('changed.owl.carousel', function(e){
-		
-		$('.custom-slider-background .custom-slider-background-image-stage').each(function(){
-			var $stage       = $(this),
-				$stageOuter  = $stage.closest('.custom-slider-background-image-stage-outer'),
-				$currentItem = $stage.find('.custom-slider-background-image-item').eq( e.item.index ),
-				nItems       = $stage.find('.custom-slider-background-image-item').length;
+    $slider.on('changed.owl.carousel', function(e) {
 
-			var distance = $stage.hasClass('reverse') ? ( $currentItem.outerHeight() * nItems ) - ( $currentItem.outerHeight() * ( e.item.index + 1 ) ) : $currentItem.outerHeight() * e.item.index,
-				mathSymbol = $stage.hasClass('reverse') ? '-' : '-'; 
+        $('.custom-slider-background .custom-slider-background-image-stage').each(function() {
+            var $stage = $(this),
+                $stageOuter = $stage.closest('.custom-slider-background-image-stage-outer'),
+                $currentItem = $stage.find('.custom-slider-background-image-item').eq(e.item.index),
+                nItems = $stage.find('.custom-slider-background-image-item').length;
 
-			$stage.css({
-				transform: 'translate3d(0, '+ mathSymbol + distance +'px, 0)'
-			});
-		});
+            var distance = $stage.hasClass('reverse') ? ($currentItem.outerHeight() * nItems) - ($currentItem.outerHeight() * (e.item.index + 1)) : $currentItem.outerHeight() * e.item.index,
+                mathSymbol = $stage.hasClass('reverse') ? '-' : '-';
 
-	});
+            $stage.css({
+                transform: 'translate3d(0, ' + mathSymbol + distance + 'px, 0)'
+            });
+        });
 
-	// Once we have all ready, show the slider
-	$slider.on('initialized.owl.carousel', function(){
-		setTimeout(function(){
-			$('.custom-slider-background').addClass('show');
-		}, 800);
-	});
+    });
 
-	// Hide nav on first load of page
-	$slider.on('initialized.owl.carousel', function(){
-		setTimeout(function(){
-			$slider.find('.owl-nav').addClass('hide');
-		}, 200);
-	});
+    // Once we have all ready, show the slider
+    $slider.on('initialized.owl.carousel', function() {
+        setTimeout(function() {
+            $('.custom-slider-background').addClass('show');
+        }, 800);
+    });
 
-	// Show nav once the slider animation is completed
-	$('.custom-slider-background').parent().on('transitionend', function(){
-		setTimeout(function(){
-			$slider.find('.owl-nav').addClass('show');
-			$('.custom-slider-background').addClass('custom-box-shadow-1');
-		}, 2000);
-	});
+    // Hide nav on first load of page
+    $slider.on('initialized.owl.carousel', function() {
+        setTimeout(function() {
+            $slider.find('.owl-nav').addClass('hide');
+        }, 200);
+    });
 
-	/*
-	* Page Header
-	*/
-	$('.custom-page-header-1-wrapper > div').on('animationend', function(){
-		setTimeout(function(){
-			$('.custom-page-header-1-wrapper').addClass('custom-box-shadow-1');
-		}, 1000);
-	});
+    // Show nav once the slider animation is completed
+    $('.custom-slider-background').parent().on('transitionend', function() {
+        setTimeout(function() {
+            $slider.find('.owl-nav').addClass('show');
+            $('.custom-slider-background').addClass('custom-box-shadow-1');
+        }, 2000);
+    });
 
-	/*
-	* Load More - Projects
-	*/
-	var loadMore = {
+    /*
+     * Page Header
+     */
+    $('.custom-page-header-1-wrapper > div').on('animationend', function() {
+        setTimeout(function() {
+            $('.custom-page-header-1-wrapper').addClass('custom-box-shadow-1');
+        }, 1000);
+    });
 
-		pages: 0,
-		currentPage: 1,
-		$wrapper: $('#loadMoreWrapper'),
-		$btn: $('#loadMore'),
-		$btnWrapper: $('#loadMoreBtnWrapper'),
-		$loader: $('#loadMoreLoader'),
+    /*
+     * Load More - Projects
+     */
+    var loadMore = {
 
-		build: function() {
+        pages: 0,
+        currentPage: 1,
+        $wrapper: $('#loadMoreWrapper'),
+        $btn: $('#loadMore'),
+        $btnWrapper: $('#loadMoreBtnWrapper'),
+        $loader: $('#loadMoreLoader'),
 
-			var self = this
+        build: function() {
 
-			self.pages = self.$wrapper.data('total-pages');
+            var self = this
 
-			if(self.pages <= 1) {
+            self.pages = self.$wrapper.data('total-pages');
 
-				self.$btnWrapper.remove();
-				return;
+            if (self.pages <= 1) {
 
-			} else {
+                self.$btnWrapper.remove();
+                return;
 
-				// init isotope
-				self.$wrapper.isotope();
+            } else {
 
-				self.$btn.on('click', function() {
-					self.loadMore();
-				});
+                // init isotope
+                self.$wrapper.isotope();
 
-				// Lazy Load
-				if(self.$btn.hasClass('btn-lazy-load')) {
-					theme.fn.intObs( '#loadMore', "$('#loadMore').trigger('click');", {
-						rootMargin: '0px 0px 0px 0px'
-					} );
-				}
+                self.$btn.on('click', function() {
+                    self.loadMore();
+                });
 
-			}
+                // Lazy Load
+                if (self.$btn.hasClass('btn-lazy-load')) {
+                    theme.fn.intObs('#loadMore', "$('#loadMore').trigger('click');", {
+                        rootMargin: '0px 0px 0px 0px'
+                    });
+                }
 
-		},
-		loadMore: function() {
+            }
 
-			var self = this;
+        },
+        loadMore: function() {
 
-			self.$btn.css({
-				opacity: 0
-			});
-			self.$loader.show();
+            var self = this;
 
-			// Ajax
-			$.ajax({
-				url: 'ajax/demo-architecture-2-ajax-projects-load-more-' + (parseInt(self.currentPage)+1) + '.html',
-				complete: function(data) {
+            self.$btn.css({
+                opacity: 0
+            });
+            self.$loader.show();
 
-					var $items = $(data.responseText);
+            // Ajax
+            $.ajax({
+                url: 'ajax/demo-architecture-2-ajax-projects-load-more-' + (parseInt(self.currentPage) + 1) + '.html',
+                complete: function(data) {
 
-					setTimeout(function() {
+                    var $items = $(data.responseText);
 
-						self.$wrapper.append($items)
+                    setTimeout(function() {
 
-						self.$wrapper.isotope('appended', $items);
+                        self.$wrapper.append($items)
 
-						self.currentPage++;
+                        self.$wrapper.isotope('appended', $items);
 
-						if(self.currentPage < self.pages) {
-							self.$btn.css({
-								opacity: 1
-							}).blur();
-						} else {
-							self.$btnWrapper.remove();
-						}
+                        self.currentPage++;
 
-						self.$loader.hide();
+                        if (self.currentPage < self.pages) {
+                            self.$btn.css({
+                                opacity: 1
+                            }).blur();
+                        } else {
+                            self.$btnWrapper.remove();
+                        }
 
-					}, 1000);
+                        self.$loader.hide();
 
-				}
-			});
+                    }, 1000);
 
-		}
+                }
+            });
 
-	}
+        }
 
-	if($('#loadMoreWrapper').get(0)) {
-		loadMore.build();
-	}
+    }
 
-}).apply( this, [ jQuery ]);
+    if ($('#loadMoreWrapper').get(0)) {
+        loadMore.build();
+    }
+
+}).apply(this, [jQuery]);

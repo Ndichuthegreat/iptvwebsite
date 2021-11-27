@@ -6,7 +6,7 @@
  *  Made by Ilya Makarov
  *  Under MIT License
  * 
- * Modified By Okler
+ * Modified By iptvintel
  */
 !(function(root, factory) {
   if (typeof define === 'function' && define.amd) {

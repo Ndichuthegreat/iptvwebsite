@@ -1,31 +1,31 @@
 /*
 Name: 			Cleaning Services
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* SVG Aspect Ratio
-	*/
-	function aspectRatioSVG() {
-		if( $(window).width() < 2000 ) {
-			$('svg[preserveAspectRatio]').each(function(){
-				$(this).attr('preserveAspectRatio', 'xMinYMin');
-			});
-		} else {
-			$('svg[preserveAspectRatio]').each(function(){
-				$(this).attr('preserveAspectRatio', 'none');
-			});
-		}
-	}
+    /*
+     * SVG Aspect Ratio
+     */
+    function aspectRatioSVG() {
+        if ($(window).width() < 2000) {
+            $('svg[preserveAspectRatio]').each(function() {
+                $(this).attr('preserveAspectRatio', 'xMinYMin');
+            });
+        } else {
+            $('svg[preserveAspectRatio]').each(function() {
+                $(this).attr('preserveAspectRatio', 'none');
+            });
+        }
+    }
 
-	aspectRatioSVG();
-	$(window).on('resize', function(){
-		aspectRatioSVG();
-	});
+    aspectRatioSVG();
+    $(window).on('resize', function() {
+        aspectRatioSVG();
+    });
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

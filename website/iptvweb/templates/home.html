@@ -10,9 +10,9 @@
 
     <title>Iptvintel home page</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="IPTV intel" />
+    <meta name="description" content="iptv intel - The best choice for your Entertainment">
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}" type="image/x-icon" />
@@ -86,10 +86,8 @@
 															About
 													</a>
                                                 </li>
-                                                <li class="dropdown dropdown-mega">
-                                                    <a class="dropdown-item dropdown-toggle" href="{% url 'contact' %}">
-															Contact us
-													</a>
+                                                <li>
+                                                    <a class="dropdown-item" data-hash data-hash-offset="68" href="{% url 'contact' %}">Contact Us</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -106,7 +104,7 @@
                                             <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
                                     </div>
-                                    <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3" href="{% url 'subscribe' %}" target="_blank">Get IPTV NOW!</a>
+                                    <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3" href="{% url 'subscribe' %}" target="_blank">Subscribe NOW!</a>
 
                                 </div>
 
@@ -515,7 +513,7 @@
 								</span>
 								<span> about </span>
 							</h2>
-							<h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4>
+							<h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE iptv intel TEMPLATE. MEET OUR CUSTOMERS.</h4>
 						</div>
 					</div>
 
@@ -596,11 +594,13 @@
                             <strong>Success!</strong> You've been added to our email list.
                         </div>
                         <div class="alert alert-danger d-none" id="newsletterError"></div>
-                        <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST" class="mb-3 mb-md-0">
+                        <!-- <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST" class="mb-3 mb-md-0"> -->
+
+                        <form id="newsletterForm" action="#" method="POST" class="mb-3 mb-md-0">
                             <div class="input-group input-group-rounded">
                                 <input class="form-control form-control-sm bg-light" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
                                 <span class="input-group-append">
-										<button class="btn btn-light text-color-dark" type="submit"><strong>GO !</strong></button>
+										<button class="btn btn-light text-color-dark" type="submity"><strong>GO !</strong></button>
 									</span>
                             </div>
                         </form>

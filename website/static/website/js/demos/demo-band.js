@@ -1,20 +1,20 @@
 /*
 Name: 			Band
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
     /*
-    * Add "active" class to animate Custom Porto SVG Logo
-    */
-    $(window).on('load', function(){
-        setTimeout(function(){
+     * Add "active" class to animate Custom Porto SVG Logo
+     */
+    $(window).on('load', function() {
+        setTimeout(function() {
             $('.custom-porto-svg-logo').addClass('active');
         }, 1000);
     });
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

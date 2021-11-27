@@ -11,4 +11,4 @@ def about(request):
     return render(request,'about.html', {} ) 
 
 def subscribe(request):
-    return render(request,'shop.html', {} ) 
+    return render(request,'subscribe.html', {} ) 

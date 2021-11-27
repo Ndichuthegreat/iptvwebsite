@@ -1,30 +1,30 @@
 /*
 Name: 			Finance
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 // Demo Config
 (function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	Dialog with CSS animation
-	*/
-	$('.popup-with-zoom-anim').magnificPopup({
-		type: 'inline',
+    /*
+    Dialog with CSS animation
+    */
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
 
-		fixedContentPos: false,
-		fixedBgPos: true,
+        fixedContentPos: false,
+        fixedBgPos: true,
 
-		overflowY: 'auto',
+        overflowY: 'auto',
 
-		closeBtnInside: true,
-		preloader: false,
+        closeBtnInside: true,
+        preloader: false,
 
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
-	});
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
 
 }).apply(this, [jQuery]);

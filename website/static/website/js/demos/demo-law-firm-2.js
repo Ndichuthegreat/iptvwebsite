@@ -1,32 +1,32 @@
 /*
 Name: 			Law Firm 2
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* Custom See More Overlay
-	*/
-	$('.custom-seemore-overlay-button').on('click', function(e){
-		e.preventDefault();
+    /*
+     * Custom See More Overlay
+     */
+    $('.custom-seemore-overlay-button').on('click', function(e) {
+        e.preventDefault();
 
-		var $this    = $(this),
-			$wrapper = $this.closest('.custom-seemore-overlay');
+        var $this = $(this),
+            $wrapper = $this.closest('.custom-seemore-overlay');
 
-		$wrapper.addClass('active');
+        $wrapper.addClass('active');
 
-		setTimeout(function(){
-			$this.closest('.custom-seemore-overlay').animate({
-				'max-height': $wrapper[0].scrollHeight
-			}, function(){
-				$this.remove();
-				$wrapper.closest('.custom-seemore-overlay').css('max-height', 'none');
-			});
-		}, 200);
-	});
+        setTimeout(function() {
+            $this.closest('.custom-seemore-overlay').animate({
+                'max-height': $wrapper[0].scrollHeight
+            }, function() {
+                $this.remove();
+                $wrapper.closest('.custom-seemore-overlay').css('max-height', 'none');
+            });
+        }, 200);
+    });
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

@@ -2,7 +2,7 @@
   "_args": [
     [
       "@icon/linea-basic@1.0.0-alpha.4",
-      "E:\\_OKLER\\Templates\\Porto\\HTML"
+      "E:\\_iptvintel\\Templates\\Porto\\HTML"
     ]
   ],
   "_from": "@icon/linea-basic@1.0.0-alpha.4",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@icon/linea-basic/-/linea-basic-1.0.0-alpha.4.tgz",
   "_spec": "1.0.0-alpha.4",
-  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "_where": "E:\\_iptvintel\\Templates\\Porto\\HTML",
   "author": {
     "name": "Dario Ferrando"
   },

@@ -1,7 +1,7 @@
 <?php
 /*
 Name: 			Contact Form - Google Recaptcha v3
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 

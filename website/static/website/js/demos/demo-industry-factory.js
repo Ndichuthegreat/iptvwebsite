@@ -1,73 +1,73 @@
 /*
 Name: 			Industry & Factory
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* SVG Aspect Ratio
-	*/
-	function aspectRatioSVG() {
-		if( $(window).width() < 2000 ) {
-			$('svg[preserveAspectRatio]:not(.custom-svg-btn-background)').each(function(){
-				$(this).attr('preserveAspectRatio', 'xMinYMin');
-			});
-		} else {
-			$('svg[preserveAspectRatio]:not(.custom-svg-btn-background)').each(function(){
-				$(this).attr('preserveAspectRatio', 'none');
-			});
-		}
-	}
+    /*
+     * SVG Aspect Ratio
+     */
+    function aspectRatioSVG() {
+        if ($(window).width() < 2000) {
+            $('svg[preserveAspectRatio]:not(.custom-svg-btn-background)').each(function() {
+                $(this).attr('preserveAspectRatio', 'xMinYMin');
+            });
+        } else {
+            $('svg[preserveAspectRatio]:not(.custom-svg-btn-background)').each(function() {
+                $(this).attr('preserveAspectRatio', 'none');
+            });
+        }
+    }
 
-	aspectRatioSVG();
-	$(window).on('resize', function(){
-		aspectRatioSVG();
-	});
+    aspectRatioSVG();
+    $(window).on('resize', function() {
+        aspectRatioSVG();
+    });
 
-	/*
-	* Play Video
-	*/
-	var $videoBox = $('.custom-featured-box-with-video');
+    /*
+     * Play Video
+     */
+    var $videoBox = $('.custom-featured-box-with-video');
 
-	$videoBox.find('.custom-trigger-play-video').on('click', function(e){
-		e.preventDefault();
+    $videoBox.find('.custom-trigger-play-video').on('click', function(e) {
+        e.preventDefault();
 
-		var $this = $(this);
+        var $this = $(this);
 
-		// Show Loading Dots
-		$this
-			.css('height', $this.outerHeight())
-			.html( '<div class="bounce-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>' );
+        // Show Loading Dots
+        $this
+            .css('height', $this.outerHeight())
+            .html('<div class="bounce-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
 
-		setTimeout(function(){
-			
-			// Hide Video Poster
-			$videoBox
-				.find('.featured-box-background')
-				.addClass('hide');
+        setTimeout(function() {
 
-			// Hide Video Box Content
-			$videoBox
-				.find('.box-content')
-				.addClass('hide');
+            // Hide Video Poster
+            $videoBox
+                .find('.featured-box-background')
+                .addClass('hide');
 
-			// Turn the video active
-			$videoBox
-				.find('.custom-featured-box-video')
-				.addClass('active');
+            // Hide Video Box Content
+            $videoBox
+                .find('.box-content')
+                .addClass('hide');
 
-			// Play video
-			setTimeout(function(){
-				$videoBox
-					.find('.custom-featured-box-video')
-					.get(0)
-					.play();
-			}, 500);
-		}, 1000);
-	});
+            // Turn the video active
+            $videoBox
+                .find('.custom-featured-box-video')
+                .addClass('active');
 
-}).apply( this, [ jQuery ]);
+            // Play video
+            setTimeout(function() {
+                $videoBox
+                    .find('.custom-featured-box-video')
+                    .get(0)
+                    .play();
+            }, 500);
+        }, 1000);
+    });
+
+}).apply(this, [jQuery]);

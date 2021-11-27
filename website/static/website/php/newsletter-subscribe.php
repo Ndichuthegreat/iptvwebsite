@@ -1,7 +1,7 @@
 <?php
 /*
 Name: 			Newsletter Subscribe
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 

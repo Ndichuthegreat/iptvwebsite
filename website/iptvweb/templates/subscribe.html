@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Subscribe Iptvintel </title>
+
+    <meta name="keywords" content="IPTV intel" />
+    <meta name="description" content="iptv intel - The best choice for your Entertainment">
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'website/img/apple-touch-icon.png' %}">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+
+
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'website/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/animate/animate.compat.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/simple-line-icons/css/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/owl.carousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/owl.carousel/assets/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/vendor/magnific-popup/magnific-popup.min.css' %}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/theme.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/theme-elements.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/theme-blog.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/theme-shop.css' %}">
+
+
+
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="{% static 'website/css/skins/default.css' %}">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+    <!-- Head Libs -->
+    <script src="{% static 'website/vendor/modernizr/modernizr.min.js' %}"></script>
+
+</head>
+
+<body>
+    <div class="body">
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+            <div class="header-body">
+                <div class="header-container container">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo">
+                                    <a href="{% url 'home' %}">
+                                        <img alt="" width="200" height="42" data-sticky-width="130" data-sticky-height="40" src="{% static 'website/img/IPTV intel.png' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+                                    <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                        <nav class="collapse">
+                                            <ul class="nav nav-pills" id="mainNav">
+                                                <li class="dropdown">
+                                                    <a class="dropdown-item dropdown-toggle " href="{% url 'home' %}">
+															Home
+														</a>
+
+                                                </li>
+                                                <li class="dropdown dropdown-mega">
+                                                    <a class="dropdown-item dropdown-toggle" href="{% url 'about' %}">
+															About
+													</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" data-hash data-hash-offset="68" href="{% url 'contact' %}">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+                                </div>
+                                <div class="header-nav-features order-1 order-lg-2">
+                                    <div class="header-nav-feature header-nav-features-social-icons d-inline-flex">
+                                        <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean ml-0">
+                                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3 active" href="{% url 'subscribe' %}" target="_blank">Subscribe NOW!</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div role="main" class="main shop pt-4">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <ul class="breadcrumb breadcrumb-style-2 d-block text-4 mb-4">
+                            <li><a href="#" class="text-color-default text-color-hover-primary text-decoration-none">Home</a></li>
+
+                            <li>Subscribe</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mb-5 mb-md-0">
+
+                        <div class="thumb-gallery-wrapper">
+                            <div class="thumb-gallery-detail owl-carousel owl-theme manual nav-inside nav-style-1 nav-dark mb-3">
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                            </div>
+                            <div class="thumb-gallery-thumbs owl-carousel owl-theme manual thumb-gallery-thumbs">
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <div class="summary entry-summary position-relative">
+
+                            <div class="position-absolute top-0 right-0">
+                                <div class="products-navigation d-flex">
+                                    <a href="#" class="prev text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Red Ladies Handbag"><i class="fas fa-chevron-left"></i></a>
+                                    <a href="#" class="next text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Green Ladies Handbag"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <h1 class="mb-0 font-weight-bold text-7">Porto Headphone</h1>
+
+                            <div class="pb-0 clearfix d-flex align-items-center">
+                                <div title="Rated 3 out of 5" class="float-left">
+                                    <input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+                                </div>
+
+                                <div class="review-num">
+                                    <a href="#description" class="text-decoration-none text-color-default text-color-hover-primary" data-hash data-hash-offset="75" data-hash-trigger-click=".nav-link-reviews" data-hash-trigger-click-delay="1000">
+                                        <span class="count text-color-inherit" itemprop="ratingCount">(2</span> reviews)
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="divider divider-small">
+                                <hr class="bg-color-grey-scale-4">
+                            </div>
+
+                            <p class="price mb-3">
+                                <span class="sale text-color-dark">Ksh 2,500</span>
+                                <span class="amount">Ksh 9,500</span>
+                            </p>
+
+                            <p class="text-3-5 mb-3">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+
+                            <ul class="list list-unstyled text-2">
+                                <li class="mb-0">AVAILABILITY: <strong class="text-color-dark">AVAILABLE</strong></li>
+                                <li class="mb-0">SKU: <strong class="text-color-dark">1234567890</strong></li>
+                            </ul>
+
+
+                            <form enctype="multipart/form-data" method="post" class="cart" action="shop-cart.html">
+                                <!-- <table class="table table-borderless" style="max-width: 300px;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle text-2 px-0 py-2">SIZE:</td>
+                                            <td class="px-0 py-2">
+                                                <div class="custom-select-1">
+                                                    <select name="size" class="form-control text-1 h-auto py-2">
+															<option value="">PLEASE CHOOSE</option>
+															<option value="blue">Small</option>
+															<option value="red">Normal</option>
+															<option value="green">Big</option>
+														</select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-2 px-0 py-2">COLOR:</td>
+                                            <td class="px-0 py-2">
+                                                <div class="custom-select-1">
+                                                    <select name="color" class="form-control text-1 h-auto py-2">
+															<option value="">PLEASE CHOOSE</option>
+															<option value="blue">Blue</option>
+															<option value="red">Red</option>
+															<option value="green">Green</option>
+														</select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
+                                <hr>
+                                <!-- <div class="quantity quantity-lg">
+                                    <input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
+                                    <input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                    <input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
+                                </div> -->
+                                <button type="submit" class="btn btn-dark btn-modern text-uppercase bg-color-hover-primary border-color-hover-primary">Subscribe</button>
+                                <hr>
+                            </form>
+
+                            <div class="d-flex align-items-center">
+                                <ul class="social-icons social-icons-medium social-icons-clean-with-border social-icons-clean-with-border-border-grey social-icons-clean-with-border-icon-dark mr-3 mb-0">
+                                    <!-- Facebook -->
+                                    <li class="social-icons-facebook">
+                                        <a href="http://www.facebook.com/sharer.php?u=https://www.iptvintel.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Share On Facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <!-- Google+ -->
+
+                                    <!-- Twitter -->
+                                    <li class="social-icons-twitter">
+                                        <a href="https://twitter.com/share?url=https://www.iptvintel.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" data-toggle="tooltip" data-placement="top" title="Share On Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <!-- Email -->
+                                    <li class="social-icons-email">
+                                        <a href="mailto:?Subject=Share This Page&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.iptvintel.com" data-toggle="tooltip" data-placement="top" title="Share By Email">
+                                            <i class="far fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-2">
+                                    <i class="far fa-heart mr-1"></i> SAVE TO WISHLIST
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <div id="description" class="tabs tabs-simple tabs-simple-full-width-line tabs-product tabs-dark mb-2">
+                            <ul class="nav nav-tabs justify-content-start">
+                                <li class="nav-item active"><a class="nav-link active font-weight-bold text-3 text-uppercase py-2 px-3" href="#productDescription" data-toggle="tab">Description</a></li>
+                                <li class="nav-item"><a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#productInfo" data-toggle="tab">Additional Information</a></li>
+                                <li class="nav-item"><a class="nav-link nav-link-reviews font-weight-bold text-3 text-uppercase py-2 px-3" href="#productReviews" data-toggle="tab">Reviews (2)</a></li>
+                            </ul>
+                            <div class="tab-content p-0">
+                                <div class="tab-pane px-0 py-3 active" id="productDescription">
+                                    <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                                    <p class="m-0">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                                </div>
+                                <div class="tab-pane px-0 py-3" id="productInfo">
+                                    <table class="table table-striped m-0">
+                                        <tbody>
+                                            <tr>
+                                                <th class="border-top-0">
+                                                    Number of Channels
+                                                </th>
+                                                <td class="border-top-0">
+                                                    420
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Display
+                                                </th>
+                                                <td>
+                                                    4k, HD, HDR, HDR+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Other
+                                                </th>
+                                                <td>
+                                                    Antifreez technolology, no buffers
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane px-0 py-3" id="productReviews">
+                                    <ul class="comments">
+                                        <li>
+                                            <div class="comment">
+                                                <div class="img-thumbnail border-0 p-0 d-none d-md-block">
+                                                    <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-2.jpg">
+                                                </div>
+                                                <div class="comment-block">
+                                                    <div class="comment-arrow"></div>
+                                                    <span class="comment-by">
+															<strong>Jack Doe</strong>
+															<span class="float-right">
+																<div class="pb-0 clearfix">
+																	<div title="Rated 3 out of 5" class="float-left">
+																		<input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+																	</div>
+
+																	<div class="review-num">
+																		<span class="count" itemprop="ratingCount">2</span> reviews
+                                                </div>
+                                            </div>
+                                            </span>
+                                            </span>
+                                            <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="comment">
+                                    <div class="img-thumbnail border-0 p-0 d-none d-md-block">
+                                        <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                                    </div>
+                                    <div class="comment-block">
+                                        <div class="comment-arrow"></div>
+                                        <span class="comment-by">
+															<strong>John Doe</strong>
+															<span class="float-right">
+																<div class="pb-0 clearfix">
+																	<div title="Rated 3 out of 5" class="float-left">
+																		<input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+																	</div>
+
+																	<div class="review-num">
+																		<span class="count" itemprop="ratingCount">2</span> reviews
+                                    </div>
+                                </div>
+                                </span>
+                                </span>
+                                <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                        </div>
+                    </div>
+                    </li>
+                    </ul>
+                    <hr class="solid my-5">
+                    <h4>Add a review</h4>
+                    <div class="row">
+                        <div class="col">
+
+                            <form action="" id="submitReview" method="post">
+                                <div class="form-row">
+                                    <div class="form-group col pb-2">
+                                        <label class="required font-weight-bold text-dark">Rating</label>
+                                        <input type="text" class="rating-loading" value="0" title="" data-plugin-star-rating data-plugin-options="{'color': 'primary', 'size':'sm'}">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label class="required font-weight-bold text-dark">Name</label>
+                                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" required>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="required font-weight-bold text-dark">Email Address</label>
+                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <label class="required font-weight-bold text-dark">Review</label>
+                                        <textarea maxlength="5000" data-msg-required="Please enter your review." rows="8" class="form-control" name="review" id="review" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col mb-0">
+                                        <input type="submit" value="Post Review" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container py-4">
+
+        <div class="row mb-5">
+            <div class="col-lg-4">
+
+                <div class="overflow-hidden mb-3">
+                    <h4 class="pt-5 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200" data-plugin-options="{'accY': -200}">Get in <strong>Touch</strong></h4>
+                </div>
+                <div class="overflow-hidden mb-3">
+                    <p class="lead text-4 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400" data-plugin-options="{'accY': -200}">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. </p>
+                </div>
+                <div class="overflow-hidden">
+                    <p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600" data-plugin-options="{'accY': -200}">We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 offset-lg-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800" data-plugin-options="{'accY': -200}">
+
+                <h4 class="pt-5">Our <strong>Office</strong></h4>
+                <ul class="list list-icons list-icons-style-3 mt-2">
+                    <li><i class="fas fa-map-marker-alt top-6"></i> <strong>Address:</strong> 1234 Kenya, Nairobi</li>
+                    <li><i class="fas fa-phone top-6"></i> <strong>Phone:</strong> (123) 456-789</li>
+                    <li><i class="fas fa-envelope top-6"></i> <strong>Email:</strong> <a href="mailto:mail@iptv.com">mail@iptvintel.com</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000" data-plugin-options="{'accY': -200}">
+
+                <h4 class="pt-5">Business <strong>Hours</strong></h4>
+                <ul class="list list-icons list-dark mt-2">
+                    <li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
+                    <li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
+                    <li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="telegram-popup" align="center">
+
+        <p></p>
+        <!-- Telegram icon. I like to use font-awesome but dont want to effect your imports too much.-->
+        <a href="https://t.me/Market_Protocol_Chat" class="telegram-button-link">
+            <div class="telegram-button">
+                <p>
+                    <i class="fab fa-telegram-plane fa-2x"></i>
+
+                </p>
+
+            </div>
+        </a>
+    </div>
+
+    <!-- Vendor -->
+    <script src="{% static 'website/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.appear/jquery.appear.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
+    <script src="{% static 'website/vendor/popper/umd/popper.min.js' %}"></script>
+    <script src="{% static 'website/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.validation/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
+    <script src="{% static 'website/vendor/jquery.gmap/jquery.gmap.min.js' %}"></script>
+    <script src="{% static 'website/vendor/lazysizes/lazysizes.min.js' %}"></script>
+    <script src="{% static 'website/vendor/isotope/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'website/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'website/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'website/vendor/vide/jquery.vide.min.js' %}"></script>
+    <script src="{% static 'website/vendor/vivus/vivus.min.js' %}"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="{% static 'website/js/theme.js' %}"></script>
+
+    <!-- Theme Custom -->
+    <script src="{% static 'website/js/custom.js' %}"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="{% static 'website/js/theme.init.js' %}"></script>
+
+    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create',{% static 'website/' %} 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+
+</body>
+
+</html>

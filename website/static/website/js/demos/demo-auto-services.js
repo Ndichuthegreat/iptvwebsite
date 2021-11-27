@@ -1,23 +1,23 @@
 /*
 Name: 			Auto Services
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
-(function( $ ) {
+(function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* Datepicker
-	*/
+    /*
+     * Datepicker
+     */
 
-	// Fix datepicker issue when using body with margin (notice top bar)
-	var datepicker = $.fn.datepicker;
-	$.fn.datepicker = function () {
+    // Fix datepicker issue when using body with margin (notice top bar)
+    var datepicker = $.fn.datepicker;
+    $.fn.datepicker = function() {
         var result = datepicker.apply(this, arguments);
 
-        this.on('show', function (e) {
+        this.on('show', function(e) {
             var $target = $(this),
                 $picker = $target.data('datepicker').picker,
                 top;
@@ -28,28 +28,28 @@ Theme Version:	8.3.0
                 top = $target.offset().top + $target.outerHeight() + parseInt($picker.css('marginTop'));
             }
 
-            $picker.offset({top: top});
+            $picker.offset({ top: top });
         });
 
         return result;
     }
 
     // Initialize Datepickers on the page
-	$('.custom-datepicker').each(function(){
-		$(this).datepicker();
-	});
+    $('.custom-datepicker').each(function() {
+        $(this).datepicker();
+    });
 
-	/*
-	* Timepicker
-	*/
-	$('.custom-timepicker').each(function(){
-		$(this).timepicker({
-			disableMousewheel: true,
-			icons: {
-				up: 'fas fa-chevron-up',
-				down: 'fas fa-chevron-down'
-			}
-		});
-	});
+    /*
+     * Timepicker
+     */
+    $('.custom-timepicker').each(function() {
+        $(this).timepicker({
+            disableMousewheel: true,
+            icons: {
+                up: 'fas fa-chevron-up',
+                down: 'fas fa-chevron-down'
+            }
+        });
+    });
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

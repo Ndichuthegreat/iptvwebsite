@@ -1,26 +1,26 @@
 /*
 Name: 			View - Shop
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	iptvintel Themes - iptvintel
 Theme Version:	8.3.0
 */
 
 (function($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	* Quantity
-	*/
-    $( document ).on('click', '.quantity .plus',function(){
-        var $qty=$(this).parents('.quantity').find('.qty');
+    /*
+     * Quantity
+     */
+    $(document).on('click', '.quantity .plus', function() {
+        var $qty = $(this).parents('.quantity').find('.qty');
         var currentVal = parseInt($qty.val());
         if (!isNaN(currentVal)) {
             $qty.val(currentVal + 1);
         }
     });
 
-    $( document ).on('click', '.quantity .minus',function(){
-        var $qty=$(this).parents('.quantity').find('.qty');
+    $(document).on('click', '.quantity .minus', function() {
+        var $qty = $(this).parents('.quantity').find('.qty');
         var currentVal = parseInt($qty.val());
         if (!isNaN(currentVal) && currentVal > 1) {
             $qty.val(currentVal - 1);
@@ -28,11 +28,11 @@ Theme Version:	8.3.0
     });
 
     /*
-    * Image Gallery Zoom
-    */
-    if($.fn.elevateZoom) {
-        if( $('[data-zoom-image]').get(0) ) {
-            $('[data-zoom-image]').each(function(){
+     * Image Gallery Zoom
+     */
+    if ($.fn.elevateZoom) {
+        if ($('[data-zoom-image]').get(0)) {
+            $('[data-zoom-image]').each(function() {
                 var $this = $(this);
 
                 $this.elevateZoom({
@@ -49,8 +49,8 @@ Theme Version:	8.3.0
     }
 
     /*
-    * Quick View Lightbox/Popup With Ajax
-    */
+     * Quick View Lightbox/Popup With Ajax
+     */
     $('.quick-view').magnificPopup({
         type: 'ajax',
         fixedContentPos: true,
@@ -67,7 +67,7 @@ Theme Version:	8.3.0
             },
             close: function() {
                 $('html').removeClass('lightbox-opened');
-                setTimeout(function(){
+                setTimeout(function() {
                     $('html').removeClass('lightbox-beforeclose');
                 }, 500);
             },
@@ -79,7 +79,7 @@ Theme Version:	8.3.0
                 /*
                 Thumb Gallery
                 */
-                $('.thumb-gallery-wrapper').each(function(){
+                $('.thumb-gallery-wrapper').each(function() {
                     var $thumbGalleryDetail = $(this).find('.thumb-gallery-detail'),
                         $thumbGalleryThumbs = $(this).find('.thumb-gallery-thumbs'),
                         flag = false,
@@ -94,20 +94,20 @@ Theme Version:	8.3.0
                             loop: false,
                             autoHeight: true,
                             navText: [],
-                            rtl: ( $('html').attr('dir') == 'rtl' ) ? true : false
+                            rtl: ($('html').attr('dir') == 'rtl') ? true : false
                         })
                         .on('changed.owl.carousel', function(e) {
                             if (!flag) {
                                 flag = true;
-                                $thumbGalleryThumbs.trigger('to.owl.carousel', [e.item.index-1, duration, true]);
+                                $thumbGalleryThumbs.trigger('to.owl.carousel', [e.item.index - 1, duration, true]);
 
                                 $thumbGalleryThumbs.find('.owl-item').removeClass('selected');
-                                $thumbGalleryThumbs.find('.owl-item').eq( e.item.index ).addClass('selected');
+                                $thumbGalleryThumbs.find('.owl-item').eq(e.item.index).addClass('selected');
                                 flag = false;
                             }
                         });
 
-                    
+
                     $thumbGalleryThumbs
                         .owlCarousel({
                             margin: 15,
@@ -115,7 +115,7 @@ Theme Version:	8.3.0
                             nav: false,
                             center: $(this).data('thumbs-center') ? true : false,
                             dots: false,
-                            rtl: ( $('html').attr('dir') == 'rtl' ) ? true : false
+                            rtl: ($('html').attr('dir') == 'rtl') ? true : false
                         })
                         .on('click', '.owl-item', function() {
                             $thumbGalleryDetail.trigger('to.owl.carousel', [$(this).index(), duration, true]);
@@ -129,16 +129,16 @@ Theme Version:	8.3.0
                         });
 
                     $thumbGalleryThumbs.find('.owl-item').eq(0).addClass('selected');
-                        
+
 
                 });
 
                 /*
-                * Image Gallery Zoom
-                */
-                if($.fn.elevateZoom) {
-                    if( $('[data-zoom-image]').get(0) ) {
-                        $('[data-zoom-image]').each(function(){
+                 * Image Gallery Zoom
+                 */
+                if ($.fn.elevateZoom) {
+                    if ($('[data-zoom-image]').get(0)) {
+                        $('[data-zoom-image]').each(function() {
                             var $this = $(this);
 
                             $this.elevateZoom({
@@ -155,8 +155,8 @@ Theme Version:	8.3.0
                 }
 
                 /*
-                * Star Rating
-                */ 
+                 * Star Rating
+                 */
                 if ($.isFunction($.fn['themePluginStarRating'])) {
 
                     $(function() {
